@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cahayabintang"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/profile"
+            android:layout_width="130dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/profile"
+            tools:ignore="MissingConstraints" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/solichun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="210dp"
+            android:layout_marginTop="100dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:text="SOLICHUN"
+            android:textColor="#fff"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="MissingConstraints" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/mahasiswaupb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="190dp"
+        android:text="Mahasiswa UPB Semester 4"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/silver"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="190dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/profil"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="PROFIL"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:id="@+id/sayamahasiswa"
+            android:layout_width="170dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginStart="10dp"
+            android:text="Saya Mahasiswa Universitas Pelita Bangsa Kota Bekasi.Saya mengambil program studi Teknik Informatika yang kali ini sedang berjalan di semester 4 kelas TI.22.CA.1"
+            android:textSize="12sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/education"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/sayamahasiswa"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="-30dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="PENDIDIKAN" />
+        <TextView
+            android:id="@+id/sdn"
+            android:layout_width="170dp"
+            android:layout_height="20dp"
+            android:layout_alignBottom="@id/education"
+            android:layout_marginBottom="-25dp"
+            android:textSize="12sp"
+            android:layout_marginStart="10dp"
+            android:text="1. SDN 1 Krandegan" />
+        <TextView
+            android:id="@+id/smpn"
+            android:layout_width="170dp"
+            android:layout_height="20dp"
+            android:layout_alignBottom="@id/sdn"
+            android:layout_marginBottom="-20dp"
+            android:layout_marginStart="8dp"
+            android:textSize="12sp"
+            android:text="2. SMPN 2 Puring" />
+        <TextView
+            android:id="@+id/smkn"
+            android:layout_width="170dp"
+            android:layout_height="20dp"
+            android:layout_alignBottom="@id/smpn"
+            android:layout_marginBottom="-20dp"
+            android:layout_marginStart="8dp"
+            android:textSize="12sp"
+            android:text="3. SMKN 2 Kebumen" />
+        <TextView
+            android:id="@+id/sosialmedia"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/smkn"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="-45dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="SOSIAL MEDIA" />
+        <ImageView
+            android:id="@+id/wa"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/wa"
+            android:layout_alignBottom="@id/sosialmedia"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="-30dp" />
+        <TextView
+            android:id="@+id/nohp"
+            android:layout_width="130dp"
+            android:layout_height="20dp"
+            android:text="+6285776296385"
+            android:layout_marginStart="40dp"
+            android:layout_marginBottom="-28dp"
+            android:layout_alignBottom="@id/sosialmedia"/>
+        <ImageView
+            android:id="@+id/ig"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/ig"
+            android:layout_alignBottom="@id/wa"
+            android:layout_marginBottom="-30dp"
+            android:layout_marginStart="10dp" />
+        <TextView
+            android:id="@+id/igname"
+            android:layout_width="130dp"
+            android:layout_height="20dp"
+            android:text="kun_anta_lee"
+            android:layout_marginStart="40dp"
+            android:layout_marginBottom="-29dp"
+            android:layout_alignBottom="@id/nohp"/>
+        <ImageView
+            android:id="@+id/facebooc"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/facebooc"
+            android:layout_alignBottom="@id/ig"
+            android:layout_marginBottom="-30dp"
+            android:layout_marginStart="10dp" />
+        <TextView
+            android:id="@+id/faceboocname"
+            android:layout_width="130dp"
+            android:layout_height="20dp"
+            android:text="Solikhun"
+            android:layout_marginStart="40dp"
+            android:layout_marginBottom="-32dp"
+            android:layout_alignBottom="@id/igname"/>
+        <TextView
+            android:id="@+id/pengalaman"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/profile"
+            android:layout_marginStart="195dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="PENGALAMAN"
+            tools:ignore="NotSibling" />
+
+        <TextView
+            android:id="@+id/_1"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="190dp"
+            android:layout_marginTop="40dp"
+            android:text="1."
+            android:textSize="13sp" />
+        <TextView
+            android:id="@+id/isipengalaman1"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="40dp"
+            android:text="Teknisi Mesin Press (Periode Juni 2018 s/d Mei 2019)"
+            android:textSize="13sp" />
+        <TextView
+            android:id="@+id/_2"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="190dp"
+            android:layout_marginTop="95dp"
+            android:text="2."
+            android:textSize="13sp" />
+        <TextView
+            android:id="@+id/isipengalaman2"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="95dp"
+            android:text="Operator Produksi PT.XXXX (Periode September 2019 s/d Sekarang)"
+            android:textSize="13sp" />
+        <TextView
+            android:id="@+id/bahasa"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/isipengalaman2"
+            android:layout_marginStart="190dp"
+            android:layout_marginBottom="-50dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="BAHASA" />
+        <TextView
+            android:id="@+id/jawa"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/bahasa"
+            android:layout_marginBottom="-25dp"
+            android:textSize="13sp"
+            android:layout_marginStart="190dp"
+            android:text="1. Bahasa Jawa           80%" />
+        <TextView
+            android:id="@+id/sunda"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/jawa"
+            android:layout_marginBottom="-20dp"
+            android:textSize="13sp"
+            android:layout_marginStart="190dp"
+            android:text="2. Bahasa Sunda         30%" />
+        <TextView
+            android:id="@+id/indo"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/sunda"
+            android:layout_marginBottom="-20dp"
+            android:textSize="13sp"
+            android:layout_marginStart="190dp"
+            android:text="3. Bahasa Indonesia   80%" />
+        <TextView
+            android:id="@+id/inggris"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/indo"
+            android:layout_marginBottom="-20dp"
+            android:textSize="13sp"
+            android:layout_marginStart="190dp"
+            android:text="4. Bahasa Inggris        40%" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="350dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/garisvertikal" />
+
+        <TextView
+            android:id="@+id/alamat"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/facebooc"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="-30dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="ALAMAT LENGKAP" />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@id/alamat"
+            android:background="@drawable/maps"
+            android:layout_marginStart="15dp"
+            android:layout_marginBottom="-30dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/alamat"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="-30dp"
+            android:text="Jalan Swadaya, Kampung Rawa Badung. Rt.004 / Rw.007, Jatinegara Cakung, Jakarta Timur"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
